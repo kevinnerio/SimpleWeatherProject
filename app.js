@@ -6,7 +6,7 @@ const https = require('https');
 app.get("/", function(req, res){
 
   //calling to the external API
-  const url = "https://api.openweathermap.org/data/2.5/weather?lat=34.39&lon=118.54&units=imperial&appid=967a2edb91d62121aba45c9ce007c0ec";
+  const url = "https://api.openweathermap.org/data/2.5/weather?lat=34.39&lon=118.54&units=imperial&appid={{app-id}}";
 
   https.get(url, function(response){
     //let data = '';
